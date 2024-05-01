@@ -28,19 +28,19 @@
 		"start": "tsm ."
 	},
 	"dependencies": {
-		"discord.js": "14.11.0",
-		"dotenv": "16.0.3",
+		"discord.js": "14.14.1",
+		"dotenv": "16.4.5",
 		"jellycommands": "1.0.0-next.43",
 		"tsm": "2.3.0",
-		"unfurl.js": "6.3.1",
-		"url-regex-safe": "3.0.0"
+		"unfurl.js": "6.4.0",
+		"url-regex-safe": "4.0.0"
 	},
 	"devDependencies": {
 		"@playform/build": "0.0.7",
 		"@playform/document": "0.0.6",
-		"@types/node": "18.16.7",
-		"@types/url-regex-safe": "1.0.0",
-		"nodemon": "2.0.22"
+		"@types/node": "20.12.7",
+		"@types/url-regex-safe": "1.0.2",
+		"nodemon": "3.1.0"
 	},
 	"publishConfig": {
 		"access": "public"
