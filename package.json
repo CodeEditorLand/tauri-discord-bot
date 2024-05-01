@@ -1,11 +1,31 @@
 {
-	"author": {
-		"email": "Land@PlayForm.Cloud",
-		"name": "🌆 — Land —",
-		"url": "HTTPS://Land.PlayForm.Cloud"
-	},
+	"name": "tauri-discord-bot",
+	"version": "0.0.1",
+	"private": false,
+	"keywords": [
+		"land"
+	],
+	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/TauriDiscordBot#readme",
 	"bugs": {
 		"url": "HTTPS://GitHub.Com/CodeEditorLand/TauriDiscordBot/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+HTTPS://github.com/CodeEditorLand/TauriDiscordBot.git"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "🌆 — Land —",
+		"email": "Land@PlayForm.Cloud",
+		"url": "HTTPS://Land.PlayForm.Cloud"
+	},
+	"type": "module",
+	"main": "src/index.ts",
+	"scripts": {
+		"Document": "Document 'Source/**/*.ts'",
+		"dev": "nodemon --ext ts,js,mjs,json --legacy-watch --loader tsm .",
+		"prepublishOnly": "Build 'Source/**/*.ts'",
+		"start": "tsm ."
 	},
 	"dependencies": {
 		"discord.js": "14.11.0",
@@ -22,27 +42,7 @@
 		"@types/url-regex-safe": "1.0.0",
 		"nodemon": "2.0.22"
 	},
-	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/TauriDiscordBot#readme",
-	"keywords": [
-		"land"
-	],
-	"license": "SEE LICENSE IN LICENSE",
-	"main": "src/index.ts",
-	"name": "tauri-discord-bot",
-	"private": false,
 	"publishConfig": {
 		"access": "public"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+HTTPS://github.com/CodeEditorLand/TauriDiscordBot.git"
-	},
-	"scripts": {
-		"Document": "Document 'Source/**/*.ts'",
-		"dev": "nodemon --ext ts,js,mjs,json --legacy-watch --loader tsm .",
-		"prepublishOnly": "Build 'Source/**/*.ts'",
-		"start": "tsm ."
-	},
-	"type": "module",
-	"version": "0.0.1"
+	}
 }
