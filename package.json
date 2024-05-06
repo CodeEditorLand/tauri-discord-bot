@@ -28,7 +28,7 @@
 		"start": "tsm ."
 	},
 	"dependencies": {
-		"discord.js": "14.14.1",
+		"discord.js": "14.15.2",
 		"dotenv": "16.4.5",
 		"jellycommands": "1.0.0-next.43",
 		"tsm": "2.3.0",
@@ -38,7 +38,7 @@
 	"devDependencies": {
 		"@playform/build": "0.0.7",
 		"@playform/document": "0.0.6",
-		"@types/node": "20.12.7",
+		"@types/node": "20.12.10",
 		"@types/url-regex-safe": "1.0.2",
 		"nodemon": "3.1.0"
 	},
