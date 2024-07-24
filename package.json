@@ -6,7 +6,7 @@
 		"start": "tsm ."
 	},
 	"dependencies": {
-		"discord.js": "14.16.0-dev.1721153952-efa16a609",
+		"discord.js": "14.16.0-dev.1721607097-b2970bb2d",
 		"dotenv": "16.4.5",
 		"jellycommands": "1.0.0-next.43",
 		"tsm": "2.3.0",
@@ -14,7 +14,7 @@
 		"url-regex-safe": "4.0.0"
 	},
 	"devDependencies": {
-		"@types/node": "20.14.11",
+		"@types/node": "20.14.12",
 		"@types/url-regex-safe": "1.0.2",
 		"nodemon": "3.1.4"
 	}
