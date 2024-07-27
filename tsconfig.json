@@ -1,13 +1,13 @@
 {
-    "compilerOptions": {
-        "module": "ESNext",
-        "esModuleInterop": true,
-        "target": "ESNext",
-        "noImplicitAny": true,
-        "moduleResolution": "Node",
-        "sourceMap": true,
-        "outDir": "dist",
-        "skipLibCheck": true
-    },
-    "include": ["src"]
+	"compilerOptions": {
+		"module": "ESNext",
+		"esModuleInterop": true,
+		"target": "ESNext",
+		"noImplicitAny": true,
+		"moduleResolution": "Node",
+		"sourceMap": true,
+		"outDir": "dist",
+		"skipLibCheck": true
+	},
+	"include": ["src"]
 }
