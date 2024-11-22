@@ -64,6 +64,7 @@ export default command({
 	run: async ({ interaction }) => {
 		try {
 			const subcommand = interaction.options.getSubcommand(true);
+
 			const thread = await interaction.channel?.fetch();
 
 			if (!thread?.isThread())
@@ -94,6 +95,7 @@ export default command({
 					setTimeout(async () => {
 						await interaction.deleteReply();
 					}, 10000);
+
 					break;
 				}
 
@@ -105,6 +107,7 @@ export default command({
 						.replaceAll("https://", "")
 						.replaceAll(":", ";")
 						.replace(/\n+/g, " ");
+
 					const parent_id = thread.parentId || "";
 
 					// Make sure the new name isn't the same as the old one so rename calls aren't wasted
@@ -129,6 +132,7 @@ export default command({
 					setTimeout(async () => {
 						await interaction.deleteReply();
 					}, 10000);
+
 					break;
 				}
 
@@ -214,6 +218,7 @@ export default command({
 					setTimeout(async () => {
 						await interaction.deleteReply();
 					}, 10000);
+
 					break;
 				}
 
@@ -259,6 +264,7 @@ export default command({
 					setTimeout(async () => {
 						await interaction.deleteReply();
 					}, 10000);
+
 					break;
 				}
 			}

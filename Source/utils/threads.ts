@@ -98,6 +98,7 @@ export async function check_autothread_permissions(
 	member: GuildMember,
 ): Promise<boolean> {
 	const allowed_ids = [...THREAD_ADMIN_IDS, ...HELPER_ROLES];
+
 	if (thread.ownerId) allowed_ids.push(thread.ownerId);
 
 	await thread.fetchStarterMessage().then((message) => {

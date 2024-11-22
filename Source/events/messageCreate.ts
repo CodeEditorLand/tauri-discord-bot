@@ -84,13 +84,16 @@ export default event({
 			.replaceAll("https://", "")
 			.replaceAll(":", ";")
 			.replace(/\n+/g, " ");
+
 		const name = HELP_THREAD_CHANNELS.includes(message.channelId)
 			? add_thread_prefix(raw_name, false)
 			: raw_name;
+
 		const thread = await message.channel.threads.create({
 			name: name.length > 100 ? name.slice(0, 97) + "..." : name,
 			startMessage: message,
 		});
+
 		if (HELP_THREAD_CHANNELS.includes(message.channelId)) {
 			send_instruction_message(thread);
 		}
@@ -107,6 +110,7 @@ async function send_instruction_message(thread: ThreadChannel) {
 
 	// Add the solve button to the message
 	const msg = wrap_in_embed(description) as any;
+
 	const row = new ActionRowBuilder<ButtonBuilder>().addComponents(
 		new ButtonBuilder()
 			.setCustomId("solve")

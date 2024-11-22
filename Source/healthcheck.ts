@@ -2,6 +2,7 @@ import http from "http";
 import express from "express";
 
 const app = express();
+
 const router = express.Router();
 
 router.use(
@@ -11,7 +12,9 @@ router.use(
 		next: express.NextFunction,
 	) => {
 		res.header("Access-Control-Allow-Methods", "GET");
+
 		const status = app.locals.getStatus();
+
 		if (status === 200) {
 			next();
 		} else {
@@ -28,6 +31,8 @@ app.use("/api/v1", router);
 
 export default function (callback: any) {
 	app.locals.getStatus = callback;
+
 	const server = http.createServer(app);
+
 	return server.listen(3000);
 }

@@ -14,6 +14,7 @@ export class RateLimitStore {
 
 		if (available_uses > 0) {
 			if (consume) this.available_uses.set(key, available_uses - 1);
+
 			return false;
 		}
 		return true;
@@ -23,6 +24,7 @@ export class RateLimitStore {
 		setTimeout(() => {
 			this.available_uses.delete(key);
 		}, this.time_period);
+
 		return this.count;
 	}
 }

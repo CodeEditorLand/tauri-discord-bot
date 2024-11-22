@@ -46,6 +46,7 @@ export default command({
 					let listThreads = threads.filter(
 						(thread) => thread.parentId === parentChannel.id,
 					);
+
 					if (HELP_THREAD_CHANNELS.includes(parentChannel.id)) {
 						listThreads = listThreads.filter((thread) =>
 							thread.name.startsWith("❔"),
@@ -53,6 +54,7 @@ export default command({
 					}
 					// Set a title for the DM
 					let message = `**Here's a list of all currently active threads in <#${parentChannel.id}>**\n`;
+
 					if (listThreads.length === 0) {
 						message = `**There are currently no active threads in <#${parentChannel.id}>**`;
 					} else {
@@ -63,6 +65,7 @@ export default command({
 					}
 					// Send the message to the user
 					await interaction.followUp(message);
+
 					break;
 				}
 			}

@@ -36,6 +36,7 @@ const client = new JellyCommands({
 
 function health() {
 	if (!client.isReady()) return 502;
+
 	return 200;
 }
 

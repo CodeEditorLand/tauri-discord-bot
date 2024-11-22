@@ -32,6 +32,7 @@ export default event({
 						const msg = wrap_in_embed(
 							"Thread solved. Thank you everyone! 🥳",
 						) as InteractionUpdateOptions;
+
 						const row =
 							new ActionRowBuilder<ButtonBuilder>().addComponents(
 								new ButtonBuilder()
@@ -62,6 +63,7 @@ export default event({
 						const msg = wrap_in_embed(
 							"I've created a thread for your message. Please continue any relevant discussion in this thread. You can rename it with the `/thread rename` command if I failed to set a proper name for it.",
 						) as InteractionUpdateOptions;
+
 						const row =
 							new ActionRowBuilder<ButtonBuilder>().addComponents(
 								new ButtonBuilder()

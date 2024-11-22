@@ -7,6 +7,7 @@ export const build_embed = (options: EmbedData) =>
 
 export function wrap_in_embed(content: string, ephemeral?: boolean) {
 	const embed = build_embed({ description: content });
+
 	return { embeds: [embed], ephemeral };
 }
 
