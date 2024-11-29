@@ -24,7 +24,9 @@ export function tags_embed_builder({
 	author,
 }: {
 	tag_name: string;
+
 	tag_content: string;
+
 	author?: GuildMember;
 }) {
 	return [

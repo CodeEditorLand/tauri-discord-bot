@@ -59,8 +59,11 @@ export const MESSAGE_READ = "✅";
 
 export const REACTION_ROLE: {
 	emojiName: string;
+
 	emojiId: string;
+
 	roleId: string;
+
 	description: string;
 }[] = DEV_MODE
 	? [

@@ -170,7 +170,9 @@ export default command({
 									.setStyle(ButtonStyle.Secondary)
 									.setEmoji("❔"),
 							);
+
 						msg.components = [row];
+
 						await bot_message.edit(msg);
 						// Commands require a reply
 						await interaction.followUp(
@@ -254,7 +256,9 @@ export default command({
 								.setStyle(ButtonStyle.Primary)
 								.setEmoji("✅"),
 						);
+
 					msg.components = [row];
+
 					await bot_message.edit(msg);
 					// Commands require a reply
 					await interaction.followUp(

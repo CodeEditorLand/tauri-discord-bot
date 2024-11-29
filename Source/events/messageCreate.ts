@@ -118,6 +118,7 @@ async function send_instruction_message(thread: ThreadChannel) {
 			.setStyle(ButtonStyle.Primary)
 			.setEmoji("✅"),
 	);
+
 	msg.components = [row];
 
 	return await thread.send(msg);

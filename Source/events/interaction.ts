@@ -41,7 +41,9 @@ export default event({
 									.setStyle(ButtonStyle.Secondary)
 									.setEmoji("❔"),
 							);
+
 						msg.components = [row];
+
 						await interaction.update(msg);
 					} catch (e) {
 						// Send the error back to the user
@@ -72,7 +74,9 @@ export default event({
 									.setStyle(ButtonStyle.Primary)
 									.setEmoji("✅"),
 							);
+
 						msg.components = [row];
+
 						await interaction.update(msg);
 					} catch (e) {
 						// Send the error back to the user

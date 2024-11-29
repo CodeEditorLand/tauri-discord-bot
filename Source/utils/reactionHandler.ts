@@ -63,18 +63,23 @@ export async function sendReactionRoleMessage(client: Client) {
 		) as GuildTextBasedChannel;
 
 		var messageArray = ["**Welcome to the Tauri community!**"];
+
 		messageArray.push(
 			"\nTauri is a toolkit to build an optimized, secure, and frontend-independent application for multi-platform deployment.",
 		);
+
 		messageArray.push(
 			"\nFamiliarize yourself with our Code of Conduct: <https://github.com/tauri-apps/tauri/blob/dev/.github/CODE_OF_CONDUCT.md>",
 		);
 
 		messageArray.push("\n**<#616186924390023173>**");
+
 		messageArray.push(
 			"Talk with other Tauri developers in <#731495028677148753>, ask for help in <#1047150269156294677>, or show off what you've created with Tauri in <#1047149172144492604>.",
 		);
+
 		messageArray.push("\n**<#879007560429088800>**");
+
 		messageArray.push(
 			"Get involved with Tauri development and browse the different projects.",
 		);
@@ -96,15 +101,18 @@ export async function sendReactionRoleMessage(client: Client) {
 			console.debug("Attempting to edit message...");
 			// Edit the message
 			await message.edit(messageBody);
+
 			console.debug("Message edited");
 		} else {
 			// Delete old messages from the bot
 			messages
 				.filter((item) => item.author.id == item.client.user.id)
 				.forEach((item) => item.delete());
+
 			console.debug("Attempting to send message...");
 			// Send the message
 			message = await channel.send(messageBody);
+
 			console.debug("Message sent");
 		}
 	} catch (error) {

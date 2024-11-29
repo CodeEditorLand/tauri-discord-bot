@@ -82,6 +82,7 @@ export default event({
                     Once you've read this and taken the appropriate steps, react to this message`,
 					),
 				);
+
 				await msg.react(MESSAGE_READ);
 			}
 		}
