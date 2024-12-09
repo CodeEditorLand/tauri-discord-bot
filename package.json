@@ -1,4 +1,10 @@
 {
+	"name": "@codeeditorland/discord-bot",
+	"main": "src/index.ts",
+	"scripts": {
+		"dev": "nodemon --ext ts,js,mjs,json --legacy-watch --loader tsm .",
+		"start": "tsm ."
+	},
 	"dependencies": {
 		"discord.js": "14.16.3",
 		"dotenv": "16.4.7",
@@ -11,11 +17,5 @@
 		"@types/node": "22.10.1",
 		"@types/url-regex-safe": "1.0.2",
 		"nodemon": "3.1.7"
-	},
-	"main": "src/index.ts",
-	"name": "tauri-discord-bot",
-	"scripts": {
-		"dev": "nodemon --ext ts,js,mjs,json --legacy-watch --loader tsm .",
-		"start": "tsm ."
 	}
 }
